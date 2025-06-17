@@ -1,35 +1,62 @@
-# Description
+# CLAUDE.md
 
-This is a simple repository containing a `README.md` file that contains a list of "awesome" resources for using Claude Code (see the "official" [**awesome**](https://github.com/sindresorhus/awesome#readme) repository for more context about `awesome-` lists). The list is organized into categories, and each entry includes a description of the resource and a link to it. Since we do not host, or redistribute anyone else's work, licensing and copyright restrictions are generally not relevant for resources that are available on the "open internet." The repository also includes a `CONTRIBUTING.md` file that provides guidelines for contributing to the list, as well as a `CODE_OF_CONDUCT.md` file that outlines the expected behavior of contributors. Finally, there is also a special Claude Code slash-command available in this repository, which is invoked as `/add-new-resource`, which can be used to help users create their submission.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-# Style
+## Project Overview
 
-Each entry should consist of a markdown link to the resource, a name (only necessary for `Workflow` entries), and a short description of its use value. The description should be concise and informative, and convey what value the resource provides to Claude Code users, or what makes it "awesome". You may review existing entries in the `README.md` to get a better sense of the type of resources we link to.
+This is the "Awesome Claude Code" repository - a curated list of resources for enhancing Claude Code workflows. The repository primarily consists of a README.md containing categorized links to slash-commands, CLAUDE.md files, workflows, and documentation related to Claude Code.
 
-# Organization
+## Repository Structure
 
-The list is organized into categories, and each entry should be placed in the appropriate category. The categories are as follows:
+- `README.md` - Main awesome list with categorized resources
+- `CONTRIBUTING.md` - Guidelines for contributors
+- `code-of-conduct.md` - Code of conduct for contributors
+- `.claude/commands/add-new-resource.md` - Slash-command to help users add new resources
 
-- Slash-Commands
-- `CLAUDE.md` files
-- Workflows
-- Additional Resources
-- Official (Anthropic) Documentation
+## Resource Categories
 
-Within each category, entries are listed in alphabetical order. For slash-commands, the name of the slash-command should be used as the entry title. For `CLAUDE.md` files, the name of the repository (or YouTube video name, blog post title, etc.) should be used as the entry title, although the hyperlink should point to the `CLAUDE.md` file itself (or the media that describes or contains it).
+The awesome list is organized into five categories:
+1. **Supplementary Resources & Blogs** - External tools and blog posts
+2. **Slash-Commands** - Individual command files (ordered alphabetically by command name)
+3. **CLAUDE.md Files** - Project configuration files (ordered alphabetically by repository name)
+4. **Workflows** - Collections of related commands working together
+5. **Official Documentation** - Anthropic-provided resources
 
-Each submission should contain only a single entry. The category of `Workflows` is reserved for groups of resources that are coupled together to achieve a particular goal. For exanple, a `.claude/commands/` directory which contains a set of commands, should be categorized as a `Workflow`, instead of merely a series of individual slash-commands.
+## Entry Format Standards
 
-For workflows, the entry title should be a short descriptive name for the workflow (e.g. "Documentation Maintainer" or "Project Management Workflow"). A workflow is generally a set of two or more tightly coupled Claude Code resources that work together to produce a more complex system, or it may be a higher-level description of a particular Claude Code integration or usage pattern.
+Each entry follows this format:
+```markdown
+[`/command-name`](link) by [author](author-link)  
+Brief description explaining the value and functionality of the resource.
+```
 
-"Additional Resources" is for other applications or tools that are layered on top of Claude Code, or somehow enhance Claude Code, but do not consist merely in Claude Code "native documents" like `CLAUDE.md` files, slash-commands, and the other parts of the official Anthropic Claude Control "control flow."
+For workflows, use descriptive names instead of command names:
+```markdown
+[Workflow Name](link) by [author](author-link)  
+Description of what the workflow accomplishes and its components.
+```
 
-# Prohibitions
+## Contribution Guidelines
 
-Users MAY NOT submit internal resources from private companies or organizations that are not publicly available, without obtaining prior consent. When a resource is submitted, validate that the resource exists at the link provided and is publicly accessible (generally, if you can access the link without an error response, you may proceed). Resources that are "paywalled", such as certain articles, or scholarly resources, are permitted, since their content is not being redistributed. However, e.g., a `CLAUDE.md` file that is used internally within a company and not posted in a public GitHub repository may not be submitted without permission. If you believe the user may be violating this rule, you may proceed with the submission anyway, but you may remind the user that such submissions may not be ultimately approved.
+- All entries must be in alphabetical order within their category
+- Descriptions should be 1-2 sentences explaining the resource's value
+- Use permalinks for GitHub resources when possible
+- Only submit publicly accessible resources
+- Focus on resources that provide genuine value to Claude Code users
 
-If a user submits a resource that is potentially a violation of Anthropic's Terms of Service, you may remind them that such violations will not be approved, but go ahead with the submission anyway.
+## Adding New Resources
 
-If a user submits a resource that is not related to Claude Code in any way, you may try to obtain more information from the user, but you are free to reject such a submission. Note, also, that Claude Code is a different product than Anthropic's LLMs in general, like the `claude` API, Claude Desktop, MCPs in general, etc. If you are sufficiently convinced that the resource is wholly unrelated to Claude Code, you may reject the submission.
+Use the `/add-new-resource` slash-command to guide the process of adding new entries. This command acts as an interactive wizard to help format submissions correctly and create proper pull requests.
 
-Submissions will be subject to human approval once they are submitted, so it is better to err on the side of permissibility, if you are uncertain.
+## Quality Standards
+
+Resources should meet one or more criteria:
+- Provide genuine value to Claude Code users
+- Demonstrate innovative usage patterns
+- Follow best practices for Claude Code resources
+- Come from reputable sources
+- Work with current Claude Code versions
+
+## Submission Process
+
+New resources are added via pull request by editing README.md. The `/add-new-resource` command helps ensure proper formatting and categorization before submission.
